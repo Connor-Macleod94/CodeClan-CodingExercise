@@ -1,18 +1,22 @@
 /*
 *Connor Macleod
-*19/01/2021
+*14/01/2021
 *CodeClan Exercise
-*Version 2.
+*Version 1.
 */
 
-//Funtion to get country and weather type
-function getWeather(country = 'Scotland', weatherType ='sunny'){
+const  getWeather = function (country, weatherType) {
+  return 'The weather in ' + country +' is '+ weatherType +'.';
+} 
+// End of getWeather function.
 
-  console.log(`The weather in ${country} is ${weatherType}`)
-  //output
-}
+var getScotlandWeather = getWeather("Scotland", "sunny")
+var getItalyWeather = getWeather("Italy", "rainy")
+var getCanadaWeather = getWeather("Canada", "snowing")
+// variables declaring countries and weathertypes
 
-// getWeather is called 3 times with different countrys and weather types inplace of the template literals.
-getWeather();
-getWeather("Italy", "rainy")
-getWeather("Canada", "snowing")
+console.log("\n",getScotlandWeather,"\n",getItalyWeather,"\n",getCanadaWeather);
+//output "The weather in _____ is ______" with new line entrys to seperate the outputs. x3
+
+
+//end
